@@ -6,10 +6,14 @@
   kubectl get endpoints -n <namespace>
 
 #### Kubectl port-forward 
+
  - to a pod
-    kubectl port-forward pod/<pod-name> <local-port>:<pod-port>
+
+    kubectl -n \<namespace\> port-forward pod/\<pod-name\> \<local-port\>:\<pod-port\>
+      
  - to a service
-    kubectl port-forward service/<service-name> <local-port>:<pod-port>
+   
+    kubectl -n \<namespace\> port-forward service/\<service-name\> \<local-port\>:\<pod-port\>
  
 
 ## Troubleshooting
