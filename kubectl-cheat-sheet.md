@@ -5,7 +5,9 @@
 #### Get Endpoints in namespace
   kubectl get endpoints -n <namespace>
 
-#### Kubectl port-forward 
+#### Exec
+
+#### Port-forward 
 
  - to a pod
 
@@ -17,7 +19,8 @@
  
 
 ## Troubleshooting
-
+- stern
+  
 - Curl
     - -i, --include       Include protocol response headers in the output
     - -k, --insecure      Allow insecure server connections when using SSL
